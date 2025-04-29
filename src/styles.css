@@ -23,10 +23,16 @@ nav {
     padding: 0 20px;
 }
 
+nav,
+footer {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
 }
 
 .logo-container > img {
@@ -83,13 +89,63 @@ nav {
     font-style: italic;
 }
 
+.about,
+.menu {
+    padding: 1.5rem 10rem;
+}
+
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    padding: 1.5rem 10rem;
     font-size: 2rem;
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 2rem;
+    flex: 1;
+}
+
+.menu > h1 {
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 52px;
+    margin-top: 24px;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    border: 2px solid var(--orange);
+}
+
+.menu-card > * {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-card > img {
+    height: 150px;
+    width: 150px;
 }
 
 .divider {
