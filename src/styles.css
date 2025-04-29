@@ -68,6 +68,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding: 0 5rem;
 }
 
 .hero-text {
@@ -76,11 +77,24 @@ nav {
     text-align: center;
     color: white;
     font-size: 3.5rem;
-    margin: 0 5rem;
 }
 
 .hero-text > p {
     font-style: italic;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 1.5rem 10rem;
+    font-size: 2rem;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid lightgray;
 }
 
 footer {
