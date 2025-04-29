@@ -1,5 +1,4 @@
 import "./styles.css";
-import heroBackground from "./img/hero-background.jpg";
 
 export default function renderHome() {
     const content = document.getElementById("content");
@@ -7,7 +6,7 @@ export default function renderHome() {
     <section class="hero">
         <div class="hero-text">
             <h1>Welcome to Pizzeria!</h1>
-            <p>Lorem Ipsum</p>
+            <p>Taste the tradition. Experience every slice made with love, locally-sourced ingredients, and the perfect crust.</p>
         </div>
     </section>
     `;
